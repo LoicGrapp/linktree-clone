@@ -1,0 +1,228 @@
+/*Réinitialisation globale */
+*{ 
+    margin: 0;
+    padding: 0; /* Je m'assure que toutes les marges internes et externes soient  par défaut égales à 0*/
+    
+}
+
+/* Styles pour le body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 237, 217);
+}
+
+/* Style pour ma nav bar dans mon header */
+nav ul { 
+    display: flex;
+    background-color: rgb(253, 237, 217);
+    justify-content: right;
+    z-index: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* Style pour les éléments de ma nav bar */
+nav ul li a { 
+    color: black; /* modifie la couleur des éléments de ma nav bar */
+    padding: 0.875rem 1.25rem;
+    text-decoration: none; /* supprime les décorations de texte */
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 0.75rem; /* arrondis les bords de mes boutons */
+}
+
+/* Style pour le survol des élémens de ma nav bar */
+nav ul li a:hover {    
+    background-color: rgba(248, 199, 148, 0.385); /*change la couleur au survol  des éléments de ma nav bar*/
+
+}
+
+
+/* Modifie le contenu du menu déroulant */
+nav ul .dropdown-content {   
+    display: none;
+    position: absolute; /* fixe la position des éléments déroulant */
+    min-width: 6.25rem;   /* définit la taille minimum de mes boutons */
+    display: none;
+    animation: dropDown 0.8s ease-out;
+}
+
+nav ul .dropdown-content li {
+    display: block;
+}
+/* Style au survol des éléments de mon menu déroulant  */
+nav ul .dropdown-content li a:hover {     
+    background-color: rgba(248, 199, 148, 0.385);
+}
+
+/* Gère la position des éléments du menu deroulant au survol de Contact */
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+/* Style pour mon image principale  */
+.first_img {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem
+}
+
+.img_loic {
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 3.4375rem;
+    transition: transform 0.3s ease;
+
+}
+
+/* Style pour le survol de mon image princpale  */
+.img_loic:hover {
+    transform: scale(1.2);
+}
+
+/* Style pour mon H1 */
+h1 { 
+    margin-top: 1.25rem;
+    text-align: center;
+    margin-bottom: 0.625rem;
+}
+
+/* Style pour mon H2 */
+h2 {
+    font-size: 0.9375rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-weight:normal;
+}
+
+/* Style pour mes 3 liens / boutons */
+.main-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* Décorations spécifique pour mes boutons  */
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 0.625rem;
+    background-color: #474747;
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: 0.3125rem;
+    width: 12.5rem;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Decoration au survol de mes boutons  */
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Style pour mes logos d'applications  */
+.button_logo {
+    margin-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+/* Style applique aux logos individuellements */
+.logo-platf {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s transform ease;
+}
+
+/* Style au survol de mes logos */
+.logo-platf:hover {
+    transform: scale(1.1);
+}
+
+  
+/* Styles pour le footer */
+footer {
+    margin-top: auto;
+    color: black;
+    padding: 1.25rem 0;
+}
+
+/* Style pour le contenu de mon footer  */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+  
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 1.25rem;
+    
+}
+  
+.copyright {
+    animation: moveIn 1.5s ease-out;
+}
+
+/* Style pour le survol de mon footer  */
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Animation faisant apparaitre et monter les éléments  */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0.625rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour l'apparition et le deplacement vers la gauche  */
+@keyframes moveIn {
+    from {
+        opacity: 0;
+        transform: translateX(0.625rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation pour l'apparition au fur et a mesure des elements de mon menu 
+deroulant */
+@keyframes dropDown{
+    from {
+        opacity: 0;
+        transform: translateY(-3.75rem);
+        z-index: -1;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: -1;
+    }
+}
