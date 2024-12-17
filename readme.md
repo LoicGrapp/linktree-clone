@@ -30,7 +30,7 @@ This project is a personalized **Linktree** webpage for Loïc Hollay. It provide
 ### Steps
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/loicHL03/linktree-clon.git
+   git clone https://github.com/loicHL03/linktree-clone.git
    ```
 2. Navigate to the project directory:
    ```bash
