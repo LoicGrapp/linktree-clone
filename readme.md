@@ -1,7 +1,7 @@
 # Linktree Project
 
 ## Description
-This project is a personalized **Linktree** webpage for Loïc Hollay. It provides an elegant and responsive design to showcase personal and professional links, including social media profiles and favorite platforms. The website is built with HTML and CSS.
+This project is a personalized **Linktree** webpage for myself. It provides an elegant and responsive design to showcase personal and professional links, including social media profiles and favorite platforms. The website is built with HTML and CSS.
 
 ---
 
