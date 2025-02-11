@@ -68,13 +68,13 @@ nav ul li.dropdown:hover .dropdown-content {
 } 
 
 /* Style pour mon image principale  */
-.first_img {
+.main-image {
     display: flex;
     justify-content: center;
     margin-top: 2.5rem
 }
 
-.img_loic {
+.img-loic {
     width: 6.875rem;
     height: 6.875rem;
     border-radius: 3.4375rem;
@@ -83,7 +83,7 @@ nav ul li.dropdown:hover .dropdown-content {
 }
 
 /* Style pour le survol de mon image princpale  */
-.img_loic:hover {
+.img-loic:hover {
     transform: scale(1.2);
 }
 
@@ -108,7 +108,7 @@ h2 {
 }
 
 /* Style pour mes 3 liens / boutons */
-.main-links {
+.main-buttons {
     display: flex;
     flex-direction: column;
     row-gap: 0.625rem;
@@ -118,7 +118,7 @@ h2 {
 }
 
 /* Décorations spécifique pour mes boutons  */
-.btn {
+.main-buttons-links {
     text-decoration: none;
     color: white;
     padding: 0.625rem;
@@ -132,12 +132,12 @@ h2 {
 }
 
 /* Decoration au survol de mes boutons  */
-.btn:hover {
+.main-buttons-links:hover {
     transform: scale(1.1);
 }
 
 /* Style pour mes logos d'applications  */
-.button_logo {
+.icon-buttons {
     margin-top: 2.5rem;
     text-align: center;
     display: flex;
@@ -146,7 +146,7 @@ h2 {
 }
 
 /* Style applique aux logos individuellements */
-.logo-platf {
+.icon-buttons-logo {
     width: 3.125rem;
     height: 3.125rem;
     margin: 0;
@@ -155,7 +155,7 @@ h2 {
 }
 
 /* Style au survol de mes logos */
-.logo-platf:hover {
+.icon-buttons-logo:hover {
     transform: scale(1.1);
 }
 
@@ -164,15 +164,10 @@ h2 {
 footer {
     margin-top: auto;
     color: black;
-    padding: 1.25rem 0;
-}
-
-/* Style pour le contenu de mon footer  */
-.footer-content {
+    padding: 1.25rem 1.25rem;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+
 }
   
 .footer-nav a {
